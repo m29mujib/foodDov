@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodDov| Muzib</title>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- MY CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- FONT-LIBRARIES -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- FONT STYLE -->
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Poppins:wght@200;300&family=Redressed&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   </head>
   <body>
-    <section class="header">
+    <section class="header" data-aos="fade-down">
       <nav>
         <h1 class="logo">Food<span>Dov</span></h1>
         <div class="nav-link">
@@ -24,7 +31,7 @@
           <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
-      <div class="content">
+      <div class="content" data-aos="fade-right">
         <h1>Special Offer</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ducimus quam maiores <br />cupiditate sit? Accusantium incidunt consequatur, et amet ab voluptate quod cupiditate tempora</p>
 
@@ -36,22 +43,22 @@
     <section class="card">
       <h1>Menu Masakan</h1>
       <div class="row">
-        <div class="col">
+        <div class="col" data-aos="zoom-in" data-aos-offset="200">
           <img src="img/burger.jpg" />
           <h4>Hamburger</h4>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae.</p>
         </div>
-        <div class="col">
+        <div class="col" data-aos="zoom-in" data-aos-offset="200">
           <img src="img/friedchiken.jpg" />
           <h4>Fried Chiken</h4>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae.</p>
         </div>
-        <div class="col">
+        <div class="col" data-aos="zoom-in" data-aos-offset="200">
           <img src="img/spagheti.jpg" />
           <h4>Spaghetti</h4>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae.</p>
         </div>
-        <div class="col">
+        <div class="col" data-aos="zoom-in" data-aos-offset="200">
           <img src="img/salmon.jpg" />
           <h4>Salmon</h4>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae.</p>
@@ -61,7 +68,7 @@
     <!-- akhir card -->
 
     <!-- product -->
-    <section class="produck">
+    <section class="produck" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="200">
       <h1>Our Product</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vel facilis unde maxime tempora doloremque veniam aliquam quod sint? Odio?</p>
       <div class="search">
@@ -72,7 +79,7 @@
     </section>
     <!-- akhir product -->
 
-    <section class="bayar">
+    <section class="bayar" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="300">
       <h1>Transaksi</h1>
       <div class="saldo">
         <img src="img/gopay.png" />
@@ -83,7 +90,7 @@
       <p class="ket"><i>jika waktu pembayaran ada kendala bisa </i> <a href="#"> klik disini</a></p>
     </section>
 
-    <section class="hub">
+    <section class="hub" data-aos="flip-up" data-aos-duration="2500" data-aos-offset="300">
       <h1>Contact Us</h1>
       <form>
         <label>Email</label>
@@ -95,12 +102,25 @@
         <label>Nomor</label>
         <input type="number" placeholder="Masukan Nomor Id" class="file" />
       </form>
+      <button class="btn">Kirim</button>
     </section>
 
     <section class="footer">
       <p style="color: rgb(216, 210, 210); font-size: 11px; text-align: center">Terimakasih</p>
       <p style="color: rgb(216, 210, 210); font-size: 11px; text-align: center">semoga sehat selalu</p>
-      <img src="img/images.png" />
+      <img src="img/download.png" />
     </section>
+
+    <!-- Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 2000,
+      });
+    </script>
+
+    <!-- gsop -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   </body>
 </html>
